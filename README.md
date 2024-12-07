@@ -44,9 +44,11 @@ git clone <repository-url>
 cd assignment
 
 2. Create and Activate Virtual Environment
-python -m venv environment
+
+python -m venv environment       
+environment\Scripts\pip install django  #Install django in scripts folder 
 source environment/bin/activate  # On macOS/Linux
-environment\Scripts\activate     # On Windows
+environment\Scripts\activate     # On Windows activate environment
 
 3. Apply Migrations
 python manage.py makemigrations
